@@ -25,10 +25,10 @@ function Navigation() {
   };
 
   return (
-    <header className="fixed w-full top-0 z-50 flex justify-between p-[2rem]">
+    <header className="fixed mx-auto top-[3%] left-1/2 -translate-x-1/2 w-full max-w-4xl sm:max-w-[80dvw] z-50 flex justify-between py-[1rem] px-[2rem] rounded-[56px]">
       <div className="logo_wrapper">
         <Link to="/" className={isActive("/")} style={{ fontSize: "1.2rem" }}>
-          Kenneth Ballon
+          Ken Ballon
         </Link>
       </div>
       <nav>
