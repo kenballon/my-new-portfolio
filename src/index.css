@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  font-family: system-ui, 'Graphik', 'SF Pro Display', Helvetica, Arial, sans-serif;
+  font-family: system-ui, "Graphik", "SF Pro Display", Helvetica, Arial,
+    sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -70,7 +71,7 @@ button:focus-visible {
 
 .headline {
   @apply font-bold my-4 text-pretty;
-  font-size: clamp(3rem, 4.474vw + 0.131rem, 5.5rem);
+  font-size: clamp(2rem, 3.684vw + 1.079rem, 5.5rem);
 }
 
 .subheadline {

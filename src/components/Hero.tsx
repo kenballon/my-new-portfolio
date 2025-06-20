@@ -5,7 +5,7 @@ const Hero = () => {
     <PageTransition>
       <section className="hero_section min-h-dvh relative">
         <div className="w-full min-h-full mx-auto z-10 flex items-center relative p-[2rem]">
-          <h1 className="headline text-white">
+          <h1 className="headline text-white capitalize">
             <span className="block">Creating digital experiences</span>{" "}
             <span>that users love.</span>
           </h1>
@@ -17,12 +17,16 @@ const Hero = () => {
         </div>
       </section>
       <section className="recent_work min-h-dvh relative">
-        <div className="w-full min-h-full mx-auto z-10 flex items-center relative p-[2rem]">
-          <h2 className="text-3xl">
+        <div className="w-full max-w-[80%] min-h-full mx-autorelative p-[2rem]">
+          <h2 className="text-[48px] text-pretty font-bold mb-4">
+            Helping brands to stand out in the digital era. Together we will set
+            the new status quo. No nonsense, always on the cutting edge.
+          </h2>
+          <p className="text-[18px] uppercase font-light max-w-3xl text-pretty mt-[4rem]">
             I simply make UI for Websites. If opportunity present, I code them.
             I work with different talented people to get lots of ideas and try
             new things to make the design fun and easy for everyone to use.
-          </h2>
+          </p>
         </div>
       </section>
     </PageTransition>
