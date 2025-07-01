@@ -79,7 +79,7 @@ const Hero = () => {
             </li>
             <li className="list_of_works_item p-4">
               <a href="#" className="list_of_works_link flex justify-between">
-                <div className="listofworks_number">1</div>
+                <div className="listofworks_number">2</div>
                 <div>
                   <div className="work_item_label uppercase">Project</div>
                   <div className="project_name">RIA Activate New York</div>
