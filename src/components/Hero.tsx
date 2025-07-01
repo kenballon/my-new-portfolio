@@ -54,7 +54,11 @@ const Hero = () => {
 
           <ul className="list_of_works">
             <li className="list_of_works_item p-4">
-              <a href="#" className="list_of_works_link flex justify-between">
+              <a
+                href="https://www.charltonslaw.com/"
+                target="_blank"
+                className="list_of_works_link flex justify-between"
+              >
                 <div className="listofworks_number">1</div>
                 <div>
                   <div className="work_item_label uppercase">Project</div>
@@ -78,8 +82,12 @@ const Hero = () => {
               </a>
             </li>
             <li className="list_of_works_item p-4">
-              <a href="#" className="list_of_works_link flex justify-between">
-                <div className="listofworks_number">1</div>
+              <a
+                href="https://riaactivate.com/"
+                target="_blank"
+                className="list_of_works_link flex justify-between"
+              >
+                <div className="listofworks_number">2</div>
                 <div>
                   <div className="work_item_label uppercase">Project</div>
                   <div className="project_name">RIA Activate New York</div>
@@ -102,7 +110,11 @@ const Hero = () => {
               </a>
             </li>
             <li className="list_of_works_item p-4">
-              <a href="#" className="list_of_works_link flex justify-between">
+              <a
+                href="https://www.insurancebusinessmag.com/us/"
+                target="_blank"
+                className="list_of_works_link flex justify-between"
+              >
                 <div className="listofworks_number">3</div>
                 <div>
                   <div className="work_item_label uppercase">Project</div>
