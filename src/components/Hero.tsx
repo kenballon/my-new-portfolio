@@ -55,8 +55,7 @@ const Hero = () => {
           <ul className="list_of_works">
             <li className="list_of_works_item p-4">
               <a
-                href="https://www.charltonslaw.com/"
-                target="_blank"
+                href="/project/charltons-law"
                 className="list_of_works_link flex justify-between"
               >
                 <div className="listofworks_number">1</div>
@@ -83,8 +82,7 @@ const Hero = () => {
             </li>
             <li className="list_of_works_item p-4">
               <a
-                href="https://riaactivate.com/"
-                target="_blank"
+                href="/project/ria-activate"
                 className="list_of_works_link flex justify-between"
               >
                 <div className="listofworks_number">2</div>
@@ -111,8 +109,7 @@ const Hero = () => {
             </li>
             <li className="list_of_works_item p-4">
               <a
-                href="https://www.insurancebusinessmag.com/us/"
-                target="_blank"
+                href="/project/insurance-business"
                 className="list_of_works_link flex justify-between"
               >
                 <div className="listofworks_number">3</div>
