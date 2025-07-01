@@ -19,8 +19,9 @@ const Hero = () => {
       <section className="recent_work min-h-dvh relative">
         <div className="w-full max-w-[80%] min-h-full mx-autorelative p-[2rem]">
           <h2 className="text-[48px] text-pretty font-bold mb-4">
-            Helping brands to stand out in the digital era. Together we will set
-            the new status quo. No nonsense, always on the cutting edge.
+            Transforming ideas into interactive realities. Frontend precision
+            meets design thinking to create experiences users actually want to
+            use.
           </h2>
           <p className="text-[18px] uppercase font-light max-w-3xl text-pretty mt-[4rem]">
             I simply make UI for Websites. If opportunity present, I code them.
