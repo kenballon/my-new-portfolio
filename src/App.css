@@ -1,3 +1,20 @@
+/* Color scheme variables */
+:root {
+  --section-text-color: #242121;
+  --section-muted-color: #757575;
+  --section-border-color: #B8B8B8;
+  --section-bg: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --section-text-color: #f3f3f3;
+    --section-muted-color: #b8b8b8;
+    --section-border-color: #444;
+    --section-bg: #181818;
+  }
+}
+
 #root {
   width: 100%;
   max-width: 100dvw;
@@ -7,6 +24,7 @@
 body {
   overscroll-behavior: none;
   color: #242121;
+  background: var(--section-bg);
 }
 
 header.scroll-active {
@@ -83,10 +101,12 @@ header.scroll-active {
     h2 {
       font-size: clamp(2.5rem, 2.564vw + 1.699rem, 3.75rem);
       line-height: 100%;
+      color: var(--section-text-color);
     }
 
     .blurbs_section_text {
       font-size: clamp(0.938rem, 1.154vw + 0.577rem, 1.5rem);
+      color: var(--section-text-color);
     }
 
     @media (min-width: 1364px) {
@@ -96,6 +116,8 @@ header.scroll-active {
 }
 
 .latest_work {
+  color: var(--section-text-color);
+
   .latest_work_div {
     .latest_work_headline_details {
 
@@ -104,11 +126,12 @@ header.scroll-active {
         font-weight: 600;
         max-width: 564px;
         line-height: 100%;
+        color: var(--section-text-color);
 
         span.filter_text_btn {
           margin-right: .5rem;
           cursor: pointer;
-          color: #B8B8B8;
+          color: var(--section-muted-color);
           transition: color 0.3s ease-in;
 
           &:hover {
@@ -121,7 +144,7 @@ header.scroll-active {
         }
 
         span.filter_text_btn.active {
-          color: #242121;
+          color: var(--section-text-color);
           cursor: default;
 
           &:hover {
@@ -135,10 +158,10 @@ header.scroll-active {
       margin-block-start: 4rem;
 
       .list_of_works_item {
-        border-bottom: 1px solid #B8B8B8;
+        border-bottom: 1px solid var(--section-border-color);
 
         &:first-child {
-          border-top: 1px solid #B8B8B8;
+          border-top: 1px solid var(--section-border-color);
         }
 
         .list_of_works_link {
@@ -165,11 +188,12 @@ header.scroll-active {
 
             .work_item_label {
               font-size: 10px;
-              color: #757575;
+              color: var(--section-muted-color);
             }
 
             .project_name {
               font-size: clamp(1.25rem, 1.538vw + 0.769rem, 2rem);
+              color: var(--section-text-color);
             }
 
           }
@@ -218,4 +242,10 @@ header.scroll-active {
       }
     }
   }
+}
+
+.loc_name,
+.services_names,
+.listofworks_number {
+  color: var(--section-text-color);
 }
