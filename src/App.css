@@ -1,6 +1,6 @@
 /* Color scheme variables */
 :root {
-  --section-text-color: #242121;
+  --default-font-color: #242121;
   --section-muted-color: #757575;
   --section-border-color: #B8B8B8;
   --section-bg: #fff;
@@ -8,7 +8,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --section-text-color: #f3f3f3;
+    --default-font-color: #f3f3f3;
     --section-muted-color: #b8b8b8;
     --section-border-color: #444;
     --section-bg: #181818;
@@ -23,24 +23,18 @@
 
 body {
   overscroll-behavior: none;
-  color: #242121;
-  background: var(--section-bg);
+  color: var(--default-font-color);
+  /* background: var(--section-bg); */
 }
 
 header.scroll-active {
   background-color: #ffffff0e;
   backdrop-filter: blur(8px);
   border-bottom: 3px solid #ffffff1a;
-  /* backdrop-filter: blur(10px);
-  background-color: #d9d9d940;
-  border: max(0.069vw, 2px) solid hsla(0, 0%, 100%, 0.3);
-  box-shadow: 0 0 max(0.069vw, 1px) 0 hsla(0, 0%, 100%, 0.1) inset,
-    0 0 max(0.555vw, 8px) 0 hsla(0, 0%, 100%, 0.4) inset,
-    0 max(0.694vw, 10px) max(2.083vw, 30px) 0 rgba(255, 255, 255, 0.2); */
 }
 
 .hero_section {
-  /* background-image: url("./assets/kenbee_profile_pic.jpg"); */
+
   background-image: url("https://images.unsplash.com/photo-1633886038251-66242d6cf688?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
   background-position: center;
@@ -83,10 +77,6 @@ header.scroll-active {
   transition: width 0.3s ease;
 }
 
-/* .nav-link:hover::after,
-.nav-link.active::after {
-    width: 100%;
-} */
 
 .nav-link.active {
   font-weight: 500;
@@ -101,12 +91,12 @@ header.scroll-active {
     h2 {
       font-size: clamp(2.5rem, 2.564vw + 1.699rem, 3.75rem);
       line-height: 100%;
-      color: var(--section-text-color);
+      color: var(--default-font-color);
     }
 
     .blurbs_section_text {
       font-size: clamp(0.938rem, 1.154vw + 0.577rem, 1.5rem);
-      color: var(--section-text-color);
+      color: var(--default-font-color);
     }
 
     @media (min-width: 1364px) {
@@ -116,7 +106,7 @@ header.scroll-active {
 }
 
 .latest_work {
-  color: var(--section-text-color);
+  color: var(--default-font-color);
 
   .latest_work_div {
     .latest_work_headline_details {
@@ -126,7 +116,7 @@ header.scroll-active {
         font-weight: 600;
         max-width: 564px;
         line-height: 100%;
-        color: var(--section-text-color);
+        color: var(--default-font-color);
 
         span.filter_text_btn {
           margin-right: .5rem;
@@ -144,7 +134,7 @@ header.scroll-active {
         }
 
         span.filter_text_btn.active {
-          color: var(--section-text-color);
+          color: var(--default-font-color);
           cursor: default;
 
           &:hover {
@@ -165,7 +155,7 @@ header.scroll-active {
         }
 
         .list_of_works_link {
-          color: #242121;
+          color: var(--default-font-color);
 
           >div {
             display: flex;
@@ -193,7 +183,7 @@ header.scroll-active {
 
             .project_name {
               font-size: clamp(1.25rem, 1.538vw + 0.769rem, 2rem);
-              color: var(--section-text-color);
+              color: var(--default-font-color);
             }
 
           }
@@ -247,5 +237,5 @@ header.scroll-active {
 .loc_name,
 .services_names,
 .listofworks_number {
-  color: var(--section-text-color);
+  color: var(--default-font-color);
 }
