@@ -24,7 +24,7 @@
 body {
   overscroll-behavior: none;
   color: var(--default-font-color);
-  /* background: var(--section-bg); */
+  background: var(--section-bg);
 }
 
 header.scroll-active {

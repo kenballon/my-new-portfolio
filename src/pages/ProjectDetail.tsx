@@ -1,4 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
+import PageTransition from "../components/PageTransition";
 
 const projectData: Record<
   string,
@@ -46,36 +47,38 @@ const ProjectDetail = () => {
   }
 
   return (
-    <div className="project-detail min-h-screen bg-[#f7f5ef] text-black pt-9">
-      <div className="px-8 pt-8">
-        <div className="font-mono text-xs mb-2">{project.categories}</div>
-        <h1 className="text-7xl font-light leading-tight mb-2">
-          {project.title} <span className="text-2xl align-top">(1)</span>
-        </h1>
-      </div>
-      {project.image_url && (
-        <div className="w-full mt-4">
-          <img
-            src={project.image_url}
-            alt={project.title}
-            className="w-full object-cover max-h-[400px]"
-          />
+    <PageTransition>
+      <div className="project-detail min-h-screen bg-[#f7f5ef] text-black pt-9">
+        <div className="px-8 pt-8">
+          <div className="font-mono text-xs mb-2">{project.categories}</div>
+          <h1 className="text-7xl font-light leading-tight mb-2">
+            {project.title} <span className="text-2xl align-top">(1)</span>
+          </h1>
         </div>
-      )}
-      <div className="px-8 py-8 max-w-3xl">
-        <p className="mb-8 text-lg">{project.body}</p>
-        {project.livesite_url && (
-          <a
-            href={project.livesite_url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-6 py-2 bg-black text-white rounded hover:bg-gray-800 transition"
-          >
-            View Live Site
-          </a>
+        {project.image_url && (
+          <div className="w-full mt-4">
+            <img
+              src={project.image_url}
+              alt={project.title}
+              className="w-full object-cover max-h-[400px]"
+            />
+          </div>
         )}
+        <div className="px-8 py-8 max-w-3xl">
+          <p className="mb-8 text-lg">{project.body}</p>
+          {project.livesite_url && (
+            <a
+              href={project.livesite_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-6 py-2 bg-black text-white rounded hover:bg-gray-800 transition"
+            >
+              View Live Site
+            </a>
+          )}
+        </div>
       </div>
-    </div>
+    </PageTransition>
   );
 };
 
