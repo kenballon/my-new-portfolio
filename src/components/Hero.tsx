@@ -5,7 +5,7 @@ const Hero = () => {
     <PageTransition>
       <section className="hero_section min-h-dvh relative">
         <div className="w-full min-h-full mx-auto z-10 flex items-center relative p-[2rem]">
-          <h1 className="headline text-white capitalize">
+          <h1 className="headline headline_hero text-white capitalize">
             <span className="block">Creating digital experiences</span>{" "}
             <span>that users love.</span>
           </h1>

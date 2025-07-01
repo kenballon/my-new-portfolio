@@ -1,17 +1,37 @@
 /* Color scheme variables */
 :root {
-  --default-font-color: #242121;
-  --section-muted-color: #757575;
+  --text-color-muted: #aaaaaa;
+  --text-color-muted-hover: #5d5c5c;
   --section-border-color: #B8B8B8;
   --section-bg: #fff;
+
+  --text-color-dark-900: #1b1a1a;
+  --text-color-dark-800: #2d2c2c;
+  --text-color-dark-700: #444343;
+  --text-color-dark-600: #5d5c5c;
+  --text-color-dark-500: #757474;
+  --text-color-dark-400: #9a9999;
+  --text-color-dark-300: #b8b8b8;
+  --text-color-dark-200: #d6d6d6;
+  --text-color-dark-100: #ededed;
+  --text-color-dark-50: #f7f7f7;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --default-font-color: #f3f3f3;
-    --section-muted-color: #b8b8b8;
+    --text-color-dark-900: #f3f3f3;
+    --text-color-dark-800: #e0e0e0;
+    --text-color-dark-700: #cccccc;
+    --text-color-dark-600: #b5b5b5;
+    --text-color-dark-500: #9a9999;
+    --text-color-dark-400: #757474;
+    --text-color-dark-300: #5d5c5c;
+    --text-color-dark-200: #444343;
+    --text-color-dark-100: #2d2c2c;
+    --text-color-dark-50: #1b1a1a;
+    --text-color-muted: #5d5c5c;
+    --text-color-muted-hover: #b5b5b5;
     --section-border-color: #444;
-    --section-bg: #181818;
   }
 }
 
@@ -23,8 +43,7 @@
 
 body {
   overscroll-behavior: none;
-  color: var(--default-font-color);
-  background: var(--section-bg);
+  color: var(--text-color-dark-900);
 }
 
 header.scroll-active {
@@ -91,12 +110,12 @@ header.scroll-active {
     h2 {
       font-size: clamp(2.5rem, 2.564vw + 1.699rem, 3.75rem);
       line-height: 100%;
-      color: var(--default-font-color);
+      color: var(--text-color-dark-900);
     }
 
     .blurbs_section_text {
       font-size: clamp(0.938rem, 1.154vw + 0.577rem, 1.5rem);
-      color: var(--default-font-color);
+      color: var(--text-color-dark-500);
     }
 
     @media (min-width: 1364px) {
@@ -106,7 +125,7 @@ header.scroll-active {
 }
 
 .latest_work {
-  color: var(--default-font-color);
+  color: var(--text-color-dark-900);
 
   .latest_work_div {
     .latest_work_headline_details {
@@ -116,16 +135,16 @@ header.scroll-active {
         font-weight: 600;
         max-width: 564px;
         line-height: 100%;
-        color: var(--default-font-color);
+        color: var(--text-color-dark-900);
 
         span.filter_text_btn {
           margin-right: .5rem;
           cursor: pointer;
-          color: var(--section-muted-color);
+          color: var(--text-color-muted);
           transition: color 0.3s ease-in;
 
           &:hover {
-            color: #757575;
+            color: var(--text-color-muted-hover);
           }
 
           &:not(:last-child)::after {
@@ -134,11 +153,11 @@ header.scroll-active {
         }
 
         span.filter_text_btn.active {
-          color: var(--default-font-color);
+          color: var(--text-color-dark-900);
           cursor: default;
 
           &:hover {
-            color: #121212;
+            color: var(--text-color-dark-900);
           }
         }
       }
@@ -155,7 +174,7 @@ header.scroll-active {
         }
 
         .list_of_works_link {
-          color: var(--default-font-color);
+          color: var(--text-color-dark-900);
 
           >div {
             display: flex;
@@ -178,12 +197,12 @@ header.scroll-active {
 
             .work_item_label {
               font-size: 10px;
-              color: var(--section-muted-color);
+              color: var(--text-color-muted);
             }
 
             .project_name {
               font-size: clamp(1.25rem, 1.538vw + 0.769rem, 2rem);
-              color: var(--default-font-color);
+              color: var(--text-color-dark-900);
             }
 
           }
@@ -237,5 +256,5 @@ header.scroll-active {
 .loc_name,
 .services_names,
 .listofworks_number {
-  color: var(--default-font-color);
+  color: var(--text-color-dark-600);
 }
